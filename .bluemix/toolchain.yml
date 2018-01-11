@@ -24,7 +24,7 @@ services:
   sample-build:
     service_id: pipeline
     parameters:
-      name: '{{services.sample-repo.parameters.repo_name}}'
+      name: 'min-toolchain-{{timestamp}}'
       ui-pipeline: true
       configuration:
         content:
