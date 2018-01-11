@@ -39,6 +39,6 @@ services:
 form:
   pipeline:
     parameters:
-      prod-app-name: '{{services.sample-repo.parameters.repo_name}}'
+      prod-app-name: 'min-toolchain-{{timestamp}}'
     schema:
       $ref: deploy.json
