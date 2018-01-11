@@ -10,7 +10,6 @@ template:
   icon: icon.svg
   required:
     - sample-build
-    - sample-repo
   info:
     git url: >-
       [https://github.com/open-toolchain/simple-toolchain-hosted](https://github.com/open-toolchain/simple-toolchain-hosted)
