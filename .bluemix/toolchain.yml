@@ -17,7 +17,7 @@ template:
     git branch: >-
       [master](https://github.com/open-toolchain/simple-toolchain-hosted/tree/master)
 toolchain:
-  name: 'simple-toolchain-{{timestamp}}'
+  name: 'min-toolchain-{{timestamp}}'
   template:
     getting_started:
       $ref: "#/messages/template.gettingStarted"
