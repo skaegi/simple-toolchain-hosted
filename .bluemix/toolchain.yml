@@ -30,13 +30,7 @@ services:
         content:
           $text: pipeline.yml
         env:
-          CF_APP_NAME: '{{form.pipeline.parameters.prod-app-name}}'
-          PROD_SPACE_NAME: '{{form.pipeline.parameters.prod-space}}'
-          PROD_ORG_NAME: '{{form.pipeline.parameters.prod-organization}}'
-          PROD_REGION_ID: '{{form.pipeline.parameters.prod-region}}'
-form:
-  pipeline:
-    parameters:
-      prod-app-name: 'min-toolchain-{{timestamp}}'
-    schema:
-      $ref: deploy.json
+          CF_APP_NAME: 'min-toolchain-{{timestamp}}'
+          PROD_SPACE_NAME: 'dev'
+          PROD_ORG_NAME: 'simon_kaegi@ca.ibm.com'
+          PROD_REGION_ID: 'ibm:yp:us-south'
