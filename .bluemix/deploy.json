@@ -66,7 +66,7 @@
             },
             "key": "prod-app-name",
             "$populate": {
-                "method": "getCFRegions",
+                "method": "populateCFRegions",
                 "params": {
                     "apiKey": "zzz-api-kee"
                 }
@@ -80,7 +80,7 @@
             },
             "key": "prod-app-name2",
             "$populate": {
-                "method": "getCFRegions",
+                "method": "populateCFRegions",
                 "params": {
                     "apiKey": "zzz-api-key"
                 }
