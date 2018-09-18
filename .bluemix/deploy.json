@@ -46,24 +46,20 @@
             "url": "/devops/setup/bm-helper/helper.html"
         },
         {
-            "type": "text",
+            "type": "password",
             "readonly": false,
             "title": "Simon's Form API Kee",
             "key": "zzz-api-kee",
             "displayType": "api-key"
         },
         {
-            "type": "text",
+            "type": "password",
             "readonly": false,
             "title": "Simon's Form API Key",
             "key": "zzz-api-key"
         },
         {
             "type": "select",
-            "readonly": false,
-            "title": {
-                "$ref": "#/messages/deploy.appName"
-            },
             "key": "prod-app-name",
             "$populate": {
                 "method": "populateCFRegions",
@@ -74,10 +70,6 @@
         },
         {
             "type": "select",
-            "readonly": false,
-            "title": {
-                "$ref": "#/messages/deploy.appName"
-            },
             "key": "prod-app-name2",
             "$populate": {
                 "method": "populateCFRegions",
