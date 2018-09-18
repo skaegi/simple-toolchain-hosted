@@ -53,13 +53,13 @@
             "displayType": "api-key"
         },
         {
-            "type": "text",
+            "type": "select",
             "readonly": false,
             "title": "Simon's Form API Key",
             "key": "zzz-api-key"
         },
         {
-            "type": "text",
+            "type": "select",
             "readonly": false,
             "title": {
                 "$ref": "#/messages/deploy.appName"
