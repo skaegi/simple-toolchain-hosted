@@ -70,6 +70,13 @@
                 "params": {
                     "apiKey": "zzz-api-kee"
                 }
+            }
+        },
+        {
+            "type": "text",
+            "readonly": false,
+            "title": {
+                "$ref": "#/messages/deploy.appName"
             },
             "key": "prod-app-name2",
             "$populate": {
