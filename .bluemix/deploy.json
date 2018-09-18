@@ -14,18 +14,6 @@
     },
     "type": "object",
     "properties": {
-        "prod-region": {
-            "description": "The bluemix region",
-            "type": "string"
-        },
-        "prod-organization": {
-            "description": "The bluemix org",
-            "type": "string"
-        },
-        "prod-space": {
-            "description": "The bluemix space",
-            "type": "string"
-        },
         "prod-app-name": {
             "description": {
                 "$ref": "#/messages/deploy.appDescription"
@@ -35,9 +23,6 @@
         }
     },
     "required": [
-        "prod-region",
-        "prod-organization",
-        "prod-space",
         "prod-app-name"
     ],
     "form": [
