@@ -14,7 +14,22 @@
     },
     "type": "object",
     "properties": {
+        "zzz-api-kee": {
+            "description": "Simon's API Kee that he wished worked",
+            "type": "string"
+        },
+        "zzz-api-key": {
+            "description": "Simon's API Key",
+            "type": "string"
+        },
         "prod-app-name": {
+            "description": {
+                "$ref": "#/messages/deploy.appDescription"
+            },
+            "type": "string",
+            "pattern": "\\S"
+        },
+        "prod-app-name2": {
             "description": {
                 "$ref": "#/messages/deploy.appDescription"
             },
@@ -33,10 +48,36 @@
         {
             "type": "text",
             "readonly": false,
+            "title": "Simon's Form API Kee",
+            "key": "zzz-api-kee",
+            "displayType": "api-key"
+        },
+        {
+            "type": "text",
+            "readonly": false,
+            "title": "Simon's Form API Key",
+            "key": "zzz-api-key"
+        },
+        {
+            "type": "text",
+            "readonly": false,
             "title": {
                 "$ref": "#/messages/deploy.appName"
             },
-            "key": "prod-app-name"
+            "key": "prod-app-name",
+            "$populate": {
+                "method": "getCFRegions",
+                "params": {
+                    "apiKey": "zzz-api-kee"
+                }
+            },
+            "key": "prod-app-name2",
+            "$populate": {
+                "method": "getCFRegions",
+                "params": {
+                    "apiKey": "zzz-api-key"
+                }
+            }
         }
     ]
 }
